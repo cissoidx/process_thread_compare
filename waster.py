@@ -1,5 +1,7 @@
 import numpy as np
 
+
+'''
 def fib():
     """
     waste time using fib calculation
@@ -20,6 +22,19 @@ def np_dot():
     b = np.ones((100,100,100))
     _ = np.dot(a,b)
     return _
+'''
 
-def waste_time():
-    return np_dot()
+def calc_pow(info):
+    """
+    calculate pow(x,y)
+    x**y
+    """
+    for i in range(300000):
+        if i%50000 == 0:
+            print(info)
+        _ = pow(1000,1000)
+    return _
+
+
+def waste_time(info):
+    return calc_pow(info)
